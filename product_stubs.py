@@ -1,5 +1,5 @@
 class Product:
-  def __init__(self, name, amount, price):
+  def _init_(self, name, amount, price):
       self.name = name
       self.amount = amount
       self.price = price
@@ -10,7 +10,15 @@ class Product:
   def make_purchase(self, quantity):
       pass
 
-# create product object
-# make purchases against different product quantities (make sure to run each test case)
-# do not forget to handle exceptions
-# print the remaining stock after each purchase
+
+product = Product("Laptop", 20, 50000)
+
+product.make_purchase(100)
+product.make_purchase(-5)
+product.make_purchase(0)
+
+product1 = Product("Watch", 10, 2000)
+
+product1.make_purchase(100)
+product1.make_purchase(-5)
+product1.make_purchase(0)
